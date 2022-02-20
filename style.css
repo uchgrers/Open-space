@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.space {
+    margin: auto;
+    background-image: url("images/space.png");
+    width: 70vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.planet {
+    margin: 0;
+    position: relative;
+}
+
+.rocket {
+    position: absolute;
+    top: 13%;
+    left: 52%;
+    transform: rotate(25deg);
+}
+
+.planet-area {
+    position: absolute;
+    width: 40%;
+    left: -5px;
+    bottom: -15px;
+}
+
+.control-panel__inner {
+    position: relative;
+    background-color: #313030;
+    width: 90%;
+    height: 90%;
+    top: calc(50% - 225px);
+    left: calc(50% - 225px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lever {
+    transform: rotate(-90deg);
+    width: 15%;
+}
+
+.levers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.check-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pass-button, .pass-input, .launch-button {
+    align-self: center;
+}
+
+.pass-input {
+    outline: none;
+    height: 30px;
+    border: yellow solid;
+    border-radius: 20px;
+    background-color: #313030;
+    color: white;
+}
+
+.pass-button {
+    color: black;
+    background-color: yellow;
+    width: 50px;
+    height: 30px;
+    border: black solid;
+    border-radius: 20px;
+}
+
+.launch-button {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: large;
+    color: white;
+    background-color: red;
+    border: white solid;
+}
+
+.control-panel {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 40%;
+    left: 45%;
+    background: linear-gradient(yellow, black);
+}
+
+@keyframes launchRocket {
+    from {
+        transform: translateX(0) translateY(0) rotate(25deg);
+
+    }
+    to {
+        transform: translateX(200px) translateY(calc(-80vh)) rotate(25deg);
+    }
+}
+
+h1 {
+    position: relative;
+    margin: auto;
+    color: white;
+    font-size: xxx-large;
+}
